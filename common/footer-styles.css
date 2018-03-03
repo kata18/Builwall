@@ -1,0 +1,140 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Buildwall
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers 
+
+====================================================
+	
+	TOC 
+	
+	*. FOOTER SECTION STYLING
+		CONTACT AREA
+		MAIN FOOTER
+		SOCIAL ICONS
+		RESPONSIVE 
+
+======================================================
+
+
+/* ---------------------------------
+*. FOOTER SECTION STYLING
+--------------------------------- */
+
+footer { padding: 0px; margin-top: 65px; font-size: .95em; background: #1e1e1e; color: #ccc; }
+
+footer p{ color: #aaa; }
+
+footer ul > li > a{ padding: 0 5px; }
+
+footer a:focus,
+footer a:hover{ color: #ffcc00; }
+
+
+/* CONTACT AREA */
+
+footer .footer-contact{ text-align: center; padding: 50px 50px 20px; margin-top: -70px;
+	border: 5px solid #fff; background: #1e1e1e; color: #fff; }
+
+footer .footer-contact p,
+footer .footer-contact a{ color: #aaa; }
+
+footer .footer-contact-area{ position: relative; display: inline-block; }
+
+footer .footer-contact .left-area{ position: absolute; left: 0; top: 0; font-size: 40px; }
+
+footer .footer-contact .right-area{ margin-left: 55px; text-align: left; }
+
+footer .footer-contact .right-area a{ display: block; margin-top: 5px; }
+
+
+/* MAIN FOOTER */
+
+footer .main-footer{ margin: 50px 0 20px; }
+
+footer ul.footer-link{ display: inline-block; float: left; }
+
+footer ul.footer-link:after{ content:''; clear: both; display: block; }
+	
+footer ul.footer-link > li{ display: block; }
+
+footer ul.footer-link > li > a{ padding: 5px 0; }
+
+footer ul.footer-link > li > a:focus,
+footer ul.footer-link > li > a:hover{ text-decoration: underline; }
+
+
+footer .read-more-btn{ font-size: .9em; text-decoration: underline; }
+
+footer .read-more-btn:focus,
+footer .read-more-btn:hover{ text-decoration: none; }
+
+
+/* SOCIAL ICONS */
+
+footer .footer-icons-wrapper{ overflow: hidden; padding: 30px 30px 0;
+	box-shadow: inset 0px 0px 5px rgba(0,0,0,.1); background: #1a1a1c; }
+
+footer .footer-icons-wrapper .title{ width: 100px; margin-top: 5px; float: left; }
+
+footer .subscribe-form{ margin-left: 120px; position: relative; height: 45px; }
+
+footer .subscribe-form input{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 45px; 
+	padding: 0 120px 0 20px; border-radius: 2px; border: 1px solid #ffcc00; background: none; }
+
+footer .subscribe-form input:focus{ border-color: #fff!important; }
+
+footer .subscribe-form button{ position: absolute; top: 0; bottom: 0; right: 0; width: 120px; text-align: center; color: #ffcc00; }
+
+footer .subscribe-form button:focus,
+footer .subscribe-form button:hover{ color: #fff; }
+
+footer ul.social-icons > li{ margin-right: 10px; }
+
+footer ul.social-icons > li:first-child{ margin-right: 20px; }
+
+footer ul.social-icons > li > a{ height: 35px; width: 35px; line-height: 33px; margin: 5px 0; text-align: center; 
+	border-radius: 2px; border-radius: 30px; border: 1px solid #ffcc00; color: #888; }
+
+footer ul.social-icons > li > a:focus,
+footer ul.social-icons > li > a:hover{ background-color: #ffcc00; color: #222; }
+
+
+footer .copyright{ margin: 30px 0px; text-align: center; color: #ddd; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	/* CONTACT AREA */
+	footer .footer-contact{ text-align: left; }
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+	footer .main-footer{ margin-bottom: 5px; }
+	
+	/* CONTACT AREA */
+	footer .footer-contact{ padding: 30px 20px 0px; }
+	footer .footer-contact .left-area{ font-size: 30px; }
+	footer .footer-contact .right-area{ margin-left: 40px; }
+
+	/* SOCIAL ICONS */
+	footer .footer-icons-wrapper .title,
+	footer ul.social-icons > li:first-child{ display: block; width: 100%; margin: 0px 0 15px 0; float: none; }
+	
+	footer .footer-icons-wrapper{ padding: 30px 20px; }
+	
+	footer .subscribe-form{ margin: 0; }
+	
+	footer .subscribe-form input{ padding: 0 80px 0 15px; }
+	
+	footer .subscribe-form button{ width: 75px; }
+
+}

@@ -1,0 +1,463 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Buildwall
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers 
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+		RESPONSIVE 
+	2. COMMON STYLES
+		GO TOP 
+		RESPONSIVE 
+		SWIPER SLIDER STYLING 
+		SWIPER SIDED CRONTROL 
+		SWIPER TWO SIDED CRONTROL 
+	3. MENU STYLING
+		TOP MENU 
+		MENU BOTTOM 
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		CART AREA 
+		RESPONSIVE  
+	4. SLIDER STYLING
+		RESPONSIVE
+	5. ABOUT US
+		RESPONSIVE 
+	6. SERVICES STYLING
+	7. COUNTER STYLING
+		RESPONSIVE 
+	8. VIDEO SECTION
+		RESPONSIVE 
+	9. PROJECTS STYLING
+	10. TEAM SECTION
+		SLIDER STYLING 
+		RESPONSIVE 
+	11. QUOTO STYLING
+		RESPONSIVE 
+	12. PRODUCTS SECTION
+		SLIDER STYLING 
+	13. BLOG STYLING
+	14. CLIENT SECTION STYLING
+		RESPONSIVE 
+	15. FOOTER SECTION STYLING
+		CONTACT AREA
+		MAIN FOOTER
+		SOCIAL ICONS
+		RESPONSIVE 
+	
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ margin-top: 130px; position: relative; color: #fff; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.main-slider{ margin-top: 100px; }
+	
+	/* SLIDER CONTROL */
+
+	.zeus.tparrows{ top: auto!important; bottom: 0!important; min-width: 50px; min-height: 50px; margin-bottom: -10px; }
+
+	.zeus.tparrows:before{ line-height: 50px;}
+	
+	.tp-leftarrow.tparrows.zeus{ margin-left: -20px; }
+	.tp-rightarrow.tparrows.zeus{ margin-right: -20px; }
+
+}
+@media only screen and (max-width: 479px) {
+	.main-slider{ margin-top: 140px; }
+}
+@media only screen and (max-width: 359px) {
+	.main-slider{ margin-top: 130px; }
+}
+
+
+
+/* ---------------------------------
+5. ABOUT US
+--------------------------------- */
+
+.about-section{ padding-bottom: 100px; }
+
+.about-section .heading{ margin: 0px 0 40px -65px; }
+
+.about-section .about-img{ width: 40%; }
+
+.about-section .about-area{ width: 60%; padding-left: 30px; }
+
+.about-section .about-area .about-desc{ position: relative; z-index: 1; padding: 0px 0 0 30px; }
+
+.about-section .about-area .about-desc:after{ content:''; position: absolute; top: 0; bottom: 0; left: -30px; width: 40%;
+	z-index: -1; background: #eee; }
+
+.about-section .about-area .about-desc:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0px; width: 6px;
+	z-index: -1; background: #ffc308; }
+	
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.about-section{ text-align: center; padding-bottom: 50px; }
+	
+	.about-section .heading{ margin: 0 0 40px; }
+	
+	.about-section .about-area{ width: 100%; padding-left: 0px; }
+	
+	.about-section .about-area .about-desc{ padding-left: 0px; }
+	
+	.about-section .about-area .about-desc:after,
+	.about-section .about-img{ display: none; }
+	
+}
+@media only screen and (max-width: 479px) {
+	
+	.about-section p{ text-align: justify; }
+
+}
+
+
+
+/* ---------------------------------
+6. SERVICES STYLING
+--------------------------------- */
+
+.services-section{ overflow: hidden; text-align: center; position: relative; z-index: 1; }
+
+.services-section:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
+	background: rgba(0,0,0,.4); }
+	
+.services-section .service{ position: relative; padding: 40px 30px; overflow: hidden; margin-bottom: 30px;
+	border-radius: 2px; box-shadow: 2px 5px 40px rgba(0,0,0,.1); }
+
+.services-section .service:nth-child(2){ margin: 0 2%; }
+
+.services-section .service .icon{ position: absolute; top: -20px; left: -10px; margin-bottom: 10px; opacity: .1; color: #000; 
+	-webkit-transition: all .3s; transition: all .3s; }
+
+.services-section [class^="icon-"]:before, 
+.services-section [class*=" icon-"]:before{ font-size: 7em; line-height: 1; }
+
+.services-section .service .desc{ margin: 10px 0; color: #111; }
+
+
+
+/* ---------------------------------
+7. COUNTER STYLING
+--------------------------------- */
+
+.counter-section{ padding: 70px 0 40px; text-align: center; }
+
+.counter-section .counter{ margin-bottom: 30px; position: relative; display: inline-block; }
+
+.counter-section .counter .icon{ font-size: 40px; position: absolute; top: 10px; left: 0; opacity: .7; }
+
+.counter-section .counter .counter-info{ padding-left: 60px; text-align: left; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.counter-section{ padding: 50px 0 20px; }
+	
+	.counter-section .counter{ display: block; }
+	
+	.counter-section .counter .icon{ font-size: 30px; position: static; margin-bottom: 5px; }
+	
+	.counter-section .counter .counter-info{ padding-left: 0px; text-align: center; }
+	
+}
+
+
+/* ---------------------------------
+8. VIDEO SECTION
+--------------------------------- */
+
+.video-section{ width: 100%; text-align: center; position: relative; z-index: 1; }
+
+.video-section .display-table{ min-height: 450px; }
+
+.video-section .video-writing{ width: 50%; padding: 0px 50px; }
+
+.video-section .video-writing .icon{ font-size: 4em; margin-bottom: 15px; opacity: .9; }
+
+.video-section .video-writing .desc{ line-height: 1.6;  padding: 15px 0px; }
+
+.video-section .video{ width: 50%; position: relative; z-index: 1; background-size: cover;
+	background-image: url(../images/slider-2-1920x1080.jpg); color: #fff; }
+
+.video-section .video:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
+	background: rgba(0,0,0,.4); }
+	
+.video-section .video .icon-wrapper{ outline: 0; }
+
+.video-section .video .icon-wrapper span{ font-size: 20px; line-height: 40px; float: left; padding: 0 20px; overflow: hidden; 
+	border-radius: 40px 0 0 40px; border: 2px solid #fff; border-right: 0; }
+
+.video-section .video .icon{ font-size: 40px; margin: -13px 0 0 -7px; line-height: 70px; width: 70px; height: 70px; border-radius: 70px;
+	float: left; border: 2px solid #fff;
+	-webkit-transition: all .2s; transition: all .2s; }
+
+
+.video-section .video .icon-wrapper:focus .icon,
+.video-section .video .icon-wrapper:hover .icon,
+.video-section .video .icon-wrapper:focus span,
+.video-section .video .icon-wrapper:hover span{ border-color: #ffcc00; color: #ffcc00; }
+
+    
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.video-section .display-table{ min-height: 40px; }
+	
+	.video-section .display-table-cell{ display: block; }
+	
+	.video-section .video-writing{ width: 100%; padding: 40px 15px; }
+
+	.video-section .video{ width: 100%; padding: 80px 0; }
+
+	
+}
+
+
+/* ---------------------------------
+9. PROJECTS STYLING
+--------------------------------- */
+
+.project-section{ padding: 100px 0 0; text-align: center; }
+
+.project-section .project{ position: relative; } 
+
+.project-section .project-info{ text-align: left; position: absolute; top: 20px; bottom: 20px; left: 20px; right: 20px; 
+	opacity: 0; background: rgba(255,255,255,.95); 
+	-webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+
+.project-section .project-info .project-info-wrapper{ position: absolute; bottom: 30px; left: 30px; }
+
+.project-section .project-info .title{ margin: 5px 0 15px; }
+
+.project-section .project:hover .project-info{ opacity: 1; }
+
+.project-section .project-footer{ margin-top: 15px; height: 60px; width: 100%; background: #ffc308; }
+
+.project-section .project-footer .read-more-link{ line-height: 60px; }
+
+
+/* SLIDER CONTROLLER */
+
+.project-section .swpr-control.one-sided{ text-align: right; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.project-section{ padding: 50px 15px 0; }
+	
+}
+
+
+
+/* ---------------------------------
+10. TEAM SECTION
+--------------------------------- */
+
+.team-section .team{ position: relative; margin: 10px 10px 30px; box-shadow: 0px 1px 20px rgba(0,0,0,.10); }
+
+.team-section .team .social-icons{ position: absolute; top: 0px; right: 0px; background: #ffcc00; }
+
+.team-section .team .social-icons > li{ display: block; }
+
+.team-section .team .social-icons > li > a{ width: 30px; height: 30px; line-height: 30px; text-align: center; font-size: .95em;
+	border-top: 1px solid rgba(0,0,0,.06); color: #555; }
+
+.team-section .team .social-icons > li > a i{ font-size: .9em; }
+
+.team-section .team .social-icons > li:first-child > a{ border-top: 0; }
+
+.team-section .team .social-icons > li > a:focus,
+.team-section .team .social-icons > li > a:hover{ background: #fff; color: #000; }
+
+.team-section .team .team-info{ padding: 20px 15px 25px; }
+
+.team-section .team .team-info .designation{ margin-top: 5px; color: #666; }
+
+
+/* SLIDER STYLING */
+
+.team-section .swiper-container{ margin: -10px -10px 0; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+}
+@media only screen and (max-width: 290px) {
+	
+	
+}
+
+
+/* ---------------------------------
+11. QUOTO STYLING
+--------------------------------- */
+
+.quoto-section{ padding: 100px 0; position: relative; z-index: 1; background-size: cover;
+	background-image: url(../images/slider-2-1920x1080.jpg); color: #fff; }
+
+.quoto-section:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
+	background: rgba(0,0,0,.6); }
+
+.quoto-section .heading{ padding: 0; margin-bottom: 40px; }
+
+.quoto-section .heading:after,
+.quoto-section .heading:before{ display: none; }
+
+.quoto-section .heading .pre-heading{ color: #eee; }
+	
+.quoto-section .quoto .profile-image{ height: 100px; width: 100px; border-radius: 100px; overflow: hidden; margin: 30px 0 15px; }
+
+
+	
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.quoto-section{ padding: 50px 0 25px; text-align: center; }
+	
+	.quoto-section .quoto .profile-image{ display: inline-block; }
+	
+	.swpr-control.one-sided{ display: inline-block; }
+	
+}
+
+
+
+/* ---------------------------------
+12. PRODUCTS SECTION
+--------------------------------- */
+
+.products-section .product{ position: relative; padding: 30px 15px; margin: 10px 10px 30px; box-shadow: 0px 1px 20px rgba(0,0,0,.10);
+	-webkit-transition: all .2s cubic-bezier(.1,.54,.23,.99); transition: all .2s cubic-bezier(.1,.54,.23,.99); }
+
+.products-section .product .category{ margin-bottom: 5px; color: #666; }
+
+.products-section .product .product-img{ margin: 20px 20px; }
+
+.products-section .product .prev-price{ position: relative; font-size: .85em; margin-right: 6px; color: #666; }
+
+.products-section .product .prev-price:after{ content:''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; 
+	background: #666; }
+
+.products-section .product .cart-btn{ padding: 6px 20px 7px; margin-top: 10px; border-radius: 20px; border: 1px solid #ccc; }
+
+.products-section .product .cart-btn:focus,
+.products-section .product .cart-btn:hover{ border-color: #ffcc00; background: #ffcc00; color: #000; }
+
+
+/* SLIDER STYLING */
+
+.products-section .swiper-container{ margin: -10px -10px 0; }
+
+
+
+/* ---------------------------------
+13. BLOG STYLING
+--------------------------------- */
+
+.blog-section{ padding: 0; }
+	
+.blog-section .blog-post{ box-shadow: 2px 6px 50px rgba(0,0,0,.1); }
+
+.blog-section .blog-post .blog-info{ padding: 30px 25px 5px; }
+
+.blog-section .blog-post .date{ margin-top: 10px; color: #666; }
+
+.blog-section .blog-post .date i{ margin-right: 10px; }
+
+.blog-section .blog-post .read-more-btn{ height: 40px; line-height: 38px; width: 40px; text-align: center; border-radius: 30px; 
+	float: right; margin-top: -20px; border: 1px solid #ccc; }
+
+.blog-section .blog-post .read-more-btn:focus,
+.blog-section .blog-post .read-more-btn:hover{ border-color: #ffcc00; background: #ffcc00; color: #000; }
+
+.blog-section .blog-post .name{ padding: 20px 0; margin-right: 50px; border-top: 1px solid #ddd; }
+
+
+
+/* ---------------------------------
+14. CLIENT SECTION STYLING
+--------------------------------- */
+
+.client-section{ padding: 10px 0 30px; text-align: center; }
+
+.client-section .swiper-slide{ opacity: .9;
+	-webkit-filter: grayscale(1); filter: grayscale(1); 
+	-webkit-transition: all .4s ease-out; transition: all .4s ease-out; }
+
+.client-section .swiper-slide:hover,
+.client-section .swiper-slide-active{ opacity: 1; -webkit-filter: grayscale(0); filter: grayscale(0); }
+
+	
+/* RESPONSIVE */
+
+@media only screen and (max-width: 479px) {
+
+	.client-section{ padding: 0px 0 30px; text-align: center;  }
+	
+}
+
+
+/* ---------------------------------
+15. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+
+
+

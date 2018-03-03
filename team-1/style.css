@@ -1,0 +1,136 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Buildwall
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+		RESPONSIVE 
+	2. COMMON STYLES
+		GO TOP
+		RESPONSIVE 
+	3. MENU STYLING
+		TOP MENU 
+		MENU BOTTOM 
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		CART AREA 
+		RESPONSIVE  
+	4. SLIDER STYLING
+		RESPONSIVE
+	5. TEAM SECTION
+	6. FOOTER SECTION STYLING
+		CONTACT AREA
+		MAIN FOOTER
+		SOCIAL ICONS
+		RESPONSIVE 
+
+
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common-css/primary.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common-css/primary.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common-css/header.css */
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 350px; margin-top: 130px; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; z-index: -1; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .blog-bg-1{ background-image: url(../images/slider-4-1920x600.jpg); }
+
+
+.main-slider .desc{ margin-top: 15px; }
+
+.main-slider .desc i{ margin: 0 10px; position: relative; bottom: -2px; } 
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.main-slider{ height: 300px; margin-top: 100px; }
+
+}
+@media only screen and (max-width: 479px) {
+	
+	.main-slider{ margin-top: 120px; }
+	
+}
+@media only screen and (max-width: 359px) {
+	.main-slider{ margin-top: 130px; }
+}
+
+
+
+/* ---------------------------------
+5. TEAM SECTION
+--------------------------------- */
+
+.team-section .team{ position: relative; margin-bottom: 30px; box-shadow: 0px 3px 30px rgba(0,0,0,.11); }
+
+.team .social-icons{ position: absolute; top: 0px; right: 0px; background: #ffcc00; }
+
+.team .social-icons > li{ display: block; }
+
+.team .social-icons > li > a{ width: 30px; height: 30px; line-height: 30px; text-align: center; font-size: .95em;
+	border-top: 1px solid rgba(0,0,0,.06); color: #555; }
+
+.team .social-icons > li > a i{ font-size: .9em; }
+
+.team .social-icons > li:first-child > a{ border-top: 0; }
+
+.team .social-icons > li > a:focus,
+.team .social-icons > li > a:hover{ background: #fff; color: #000; }
+
+.team-info{ padding: 20px 15px 25px; }
+
+.team-info .designation{ margin-top: 5px; color: #666; }
+
+
+
+/* ---------------------------------
+6. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common-css/footer-styles.css */
+
+	

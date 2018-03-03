@@ -1,0 +1,352 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Buildwall
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers 
+
+====================================================
+
+	TOC
+	
+	1. PRIMARY STYLES
+		RESPONSIVE 
+	2. COMMON STYLES
+		GO TOP
+		RESPONSIVE 
+	3. MENU STYLING
+		TOP MENU 
+		MENU BOTTOM 
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		CART AREA 
+		RESPONSIVE  
+	4. SLIDER STYLING
+		RESPONSIVE
+	5. PRODUCT DETAILS
+		LEFT AREA 
+		THUMBNAIL 
+		RIGHT AREA 
+		RESPONSIVE 
+	6. PRODUCT DESCRIPTION
+		STAR ICONS 
+	7. REVIEW SECTION
+		SUBMIT REVIEW 
+		RESPONSIVE 
+	8. SUGGESTED PRODUCTS
+		SUGGESTED PRODUCTS 
+		SLIDER STYLING 
+		RESPONSIVE 
+	9. FOOTER SECTION STYLING
+		CONTACT AREA
+		MAIN FOOTER
+		SOCIAL ICONS
+		RESPONSIVE 
+
+
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common-css/primary.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common-css/primary.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common-css/header.css */
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ height: 350px; margin-top: 130px; position: relative; color: #fff; }
+
+.main-slider .slider-bg{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; z-index: -1; }
+
+.main-slider .slider-bg:after{ content:''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1; 
+	background: rgba(0,0,0,.3); }
+
+.main-slider .blog-bg-1{ background-image: url(../images/slider-5-1920x600.jpg); }
+
+
+.main-slider .desc{ margin-top: 15px; }
+
+.main-slider .desc i{ margin: 0 10px; position: relative; bottom: -2px; } 
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.main-slider{ height: 300px; margin-top: 100px; }
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.main-slider{ margin-top: 120px; }
+	
+}
+@media only screen and (max-width: 359px) {
+	.main-slider{ margin-top: 130px; }
+}
+
+
+/* ---------------------------------
+5. PRODUCT DETAILS
+--------------------------------- */
+
+/* LEFT AREA */
+
+.detail-section .prod-img{ display: none; border-radius: 3px; overflow: hidden; }
+
+.detail-section .prod-img img{ background: #e7e5e3; }
+
+.detail-section .prod-img.active{ display: block; animation: accordian-anim .3s forwards ease-in-out; }
+
+
+/* THUMBNAIL */
+
+.detail-section .product-thumbnail{ overflow: hidden;  margin: 30px 0 25px; }
+
+.detail-section .product-thumbnail .thumbnail{ width: 100px; height: 100px; float: left; margin: 0 5px 5px 0; }
+
+
+/* RIGHT AREA */
+
+.detail-section .product-info{ position: relative; }
+
+.detail-section .product-info .title{ padding-right: 75px; }
+
+.detail-section .review-link{ position: absolute; top: 2px; right: 0; }
+
+.detail-section .review-link .review-title{ font-size: .95em; margin-top: 5px; line-height: 1; }
+
+.detail-section .price-wrapper{ margin: 15px 0 0; }
+
+.detail-section .product-info .desc{ margin: 0px 0 15px; }
+
+.detail-section .price-before{ position: relative; margin: 0 12px 0 2px; font-size: .85em; color: #666; }
+
+.detail-section .price-before:after{ content:'';  position: absolute; top: 50%; left: -2px; right: -2px; height: 1px; margin-top: -1px; 
+	background: #999; 
+	-webkit-transform: translateY(1px); transform: translateY(1px); }
+
+.detail-section .qty-form .quantity-wrapper{ height: 40px; line-height: 38px; display: inline-block; border-radius: 2px; 
+	margin: 15px 10px 15px 0; border: 1px solid #aaa; }
+
+.detail-section .qty-form .quantity-input:focus{ border: 0; }    
+
+.detail-section .qty-form .quantity-input{ text-align: center; line-height: normal; width: 50px; padding: 0 10px; }
+
+.detail-section .qty-form .quantity-btn{ padding: 0 15px; line-height: inherit; cursor: pointer; font-size: 1.2em;
+	border-right: 1px solid #aaa; }
+
+.detail-section .qty-form .quantity-btn.minus{ border: 0; border-left: 1px solid #aaa; }
+
+.detail-section .qty-form .submit-btn{ display: inline-block; padding: 0 15px; height: 40px; line-height: 38px; border-radius: 2px;
+	border: 1px solid #000; background: #000; color: #fff; 
+	-webkit-transform: translateY(-1px); transform: translateY(-1px); }
+
+.detail-section .qty-form .submit-btn:hover{ background: none; color: #111; }
+
+
+.detail-section .product-info ul{ margin-top: 15px; }
+
+.detail-section .product-info ul.icons > li > a{ padding: 0 5px; color: #666; }
+
+.detail-section .product-info ul.icons > li > a:hover{ color: #000; }
+
+.detail-section .product-info ul.icons > li:first-child{ margin-right: 15px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.detail-section .product-info{ margin: 40px 0; }
+	
+	/* THUMBNAIL */
+	.detail-section .product-thumbnail .thumbnail{ width: 80px; height: 80px; }
+
+}
+
+
+/* ---------------------------------
+6. PRODUCT DESCRIPTION
+--------------------------------- */
+
+.detail-section .desc-item{ margin-bottom: 30px; }
+
+/* STAR ICONS */
+
+.detail-section .star-icons .black-star{ line-height: 1; } 
+
+.detail-section .star-icons .black-star:after{ content:'\f3ae'; display: inline-block; font-size: 18px; 
+	font-family: "Ionicons"; color: #555; }
+
+.detail-section .star-icons .black-star:before{ content:'\f2fc \f2fc \f2fc \f2fc'; display: inline-block; font-size: 18px; 
+	font-family: "Ionicons"; color: #555; }
+
+	
+@media only screen and (max-width: 767px) {
+
+	.detail-section .product-heading .title{ margin-top: 5px; }
+
+}
+
+
+/* ---------------------------------
+7. REVIEW SECTION
+--------------------------------- */
+
+.detail-section .review{ position: relative; margin-bottom: 30px; }
+
+.detail-section .review-section .title{ margin: 15px 0; }
+
+.detail-section .review-section .title.review-title{ margin-bottom: 30px; }
+
+.detail-section .review .author-img{ height: 70px; width: 70px; border-radius: 50px; overflow: hidden; position: absolute; left: 0; }
+
+.detail-section .review .review-desc{ padding-left: 85px; position: relative; }
+
+.detail-section .review .date{ margin: 10px 0; color: #666; }
+
+.detail-section .review .desc{ margin-top: 15px; }
+
+
+/* SUBMIT REVIEW */
+
+.detail-section .submit-review-area .review-stars{ margin-bottom: 30px; }
+
+.detail-section .review-stars .star:after{ content:'\f3ae'; display: inline-block; font-size: 18px; font-family: "Ionicons"; 
+	color: #666; }
+
+.detail-section .review-stars .star:hover:after{ content:'\f2fc'; }
+
+.detail-section .review-stars .star.active:after{ content:'\f2fc'; }
+
+.detail-section .submit-review-form input,
+.detail-section .submit-review-form textarea{ width: 100%; max-width: 100%; border-radius: 2px; outline: 0; margin-bottom: 20px;
+	border: 1px solid #bbb; }
+
+.detail-section .submit-review-form input{ height: 45px; padding: 0 15px; }
+
+.detail-section .submit-review-form textarea{ padding: 15px; margin-bottom: 17px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+
+	.detail-section .review .author-img{ position: static; margin-bottom: 15px; }
+	
+	.detail-section .review .review-desc{ padding-left: 0px; }
+}
+
+
+/* ---------------------------------
+8. SUGGESTED PRODUCTS
+--------------------------------- */
+
+.detail-section .desc-item{ display: none; margin-top: 15px; }
+
+.detail-section .desc-item.active{ display: block; animation: accordian-anim .3s forwards ease-in-out; }
+
+@keyframes accordian-anim{
+	0%{ opacity: 0; }
+	100%{ opacity: 1; }
+}
+
+.detail-section .product-heading .title{ margin-right: 10px; color: #999; }
+
+.detail-section .product-heading .title.active{ color: #222; }
+
+
+/* SUGGESTED PRODUCTS */
+
+.suggested-products{ box-shadow: inset 0 10px 10px -7px rgba(0,0,0,.05); }
+
+.suggested-products .product{ text-align: center; padding: 30px 15px; margin: 10px 10px 30px; 
+	-webkit-transition: all .2s cubic-bezier(.1,.54,.23,.99); transition: all .2s cubic-bezier(.1,.54,.23,.99); }
+
+.suggested-products .product:focus,
+.suggested-products .product:hover{ box-shadow: 1px 3px 20px rgba(0,0,0,.13); }
+
+.suggested-products .product .category{ margin-bottom: 5px; color: #666; }
+
+.suggested-products .product .product-img{ margin: 20px 20px; }
+
+.suggested-products .product .prev-price{ position: relative; font-size: .85em; margin-right: 6px; color: #666; }
+
+.suggested-products .product .prev-price:after{ content:''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; 
+	background: #666; }
+
+.suggested-products .product .cart-btn{ padding: 6px 20px 7px; margin-top: 10px; border-radius: 20px; border: 1px solid #ccc; }
+
+.suggested-products .product .cart-btn:focus,
+.suggested-products .product .cart-btn:hover{ border-color: #ffcc00; background: #ffcc00; color: #000; }
+
+
+/* SLIDER STYLING */
+
+.suggested-products .swiper-container{ padding: 0 0 40px; margin-bottom: 30px; }
+
+.suggested-products .swpr-control{ overflow: hidden; width: 100px; height: 40px; position: absolute; bottom: 0; left: 50%; 
+	margin-left: -50px; }
+
+.suggested-products .swiper-button-prev, 
+.suggested-products .swiper-button-next{ float: left; margin: 0 5px; padding: 0; background: none; position: static; width: 40px; 
+	height: 40px; line-height: 36px; text-align: center; float: left; font-size: 1.5em; border-radius: 30px;
+	border: 2px solid #ffcc00; }
+
+.suggested-products .swiper-button-prev:hover, 
+.suggested-products .swiper-button-next:hover{ background: #ffcc00; }
+
+	
+.swiper-wrapper{ transition-timing-function: cubic-bezier(.1,.54,.23,.99); }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.suggested-products .heading{ margin-bottom: 30px; }
+
+	.suggested-products .product{ border: 1px solid #ddd; }
+	
+	/* SLIDER STYLING */
+
+	.suggested-products .swiper-container{ padding: 0px 0px 43px; }
+
+}
+
+
+/* ---------------------------------
+9. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common-css/footer-styles.css */
+	
+

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "construction-icons";
+  src:url("construction-icons.eot");
+  src:url("construction-iconsd41d.eot?#iefix") format("embedded-opentype"),
+    url("construction-icons.woff") format("woff"),
+    url("construction-icons.ttf") format("truetype"),
+    url("construction-icons.svg#construction-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "construction-icons" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "construction-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-concrete-mixer:before {
+  content: "\61";
+}
+.icon-demolishing:before {
+  content: "\64";
+}
+.icon-engineer:before {
+  content: "\65";
+}
+.icon-paint-roller:before {
+  content: "\66";
+}
+.icon-skyline:before {
+  content: "\67";
+}
+.icon-tools:before {
+  content: "\68";
+}
+.icon-wall:before {
+  content: "\69";
+}
+.icon-house:before {
+  content: "\62";
+}
+.icon-crane:before {
+  content: "\63";
+}
+.icon-clock:before {
+  content: "\6a";
+}
+.icon-mansion:before {
+  content: "\6b";
+}
+.icon-sketch:before {
+  content: "\6c";
+}
+.icon-team:before {
+  content: "\6d";
+}

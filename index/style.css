@@ -1,0 +1,633 @@
+/*
+====================================================
+
+* 	[Master Stylesheet]
+	
+	Template Name 	:  Buildwall
+	Version    		:  1.0
+	Author     		:  W3Engineers Ltd.
+	Author URI 		:  https://themeforest.net/user/w3engineers 
+
+====================================================
+	
+	TOC
+	
+	1. PRIMARY STYLES
+		RESPONSIVE 
+	2. COMMON STYLES
+		GO TOP
+		RESPONSIVE 
+	3. MENU STYLING
+		TOP MENU 
+		MENU BOTTOM 
+		LOGO 
+		MENU RIGHT AREA 
+		MAIN MENU 
+		DROPDOWN 
+		DROPDOWN MULTI LEVEL 
+		DROPDOWN HOVER EFFECT 
+		NAV ICON 
+		SEARCH AREA 
+		CART AREA 
+		RESPONSIVE  
+	4. SLIDER STYLING
+		RESPONSIVE
+	5. ABOUT US
+		COUNTER AREA STYLING 
+		RESPONSIVE 
+	6. SERVICES STYLING
+		RESPONSIVE 
+	7. PROJECTS STYLING
+		MASONARY GRID STYLING 
+		RESPONSIVE 
+	8. VIDEO SECTION
+		RESPONSIVE 
+	9. TEAM SECTION
+		SLIDER STYLING 
+		RESPONSIVE 
+	10. FEATURED SECTION
+		RESPONSIVE 
+	11. PRODUCTS SECTION
+		SLIDER STYLING 
+		RESPONSIVE 
+	12. QUOTO STYLING
+		SLIDER STYLING 
+		RESPONSIVE 
+	13. BLOG STYLING
+	14. CLIENT SECTION STYLING
+		RESPONSIVE 
+	15. FOOTER SECTION STYLING
+		CONTACT AREA
+		MAIN FOOTER
+		SOCIAL ICONS
+		RESPONSIVE 
+	
+	
+====================================================
+
+
+/* ---------------------------------
+1. PRIMARY STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+2. COMMON STYLES
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+3. MENU STYLING
+--------------------------------- */
+
+/* common/primary-styles.css */
+
+
+/* ---------------------------------
+4. SLIDER STYLING
+--------------------------------- */
+
+.main-slider{ margin-top: 130px; position: relative; color: #fff; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.main-slider{ margin-top: 100px; }
+	
+	/* SLIDER CONTROL */
+
+	.zeus.tparrows{ top: auto!important; bottom: 0!important; min-width: 50px; min-height: 50px; margin-bottom: -10px; }
+
+	.zeus.tparrows:before{ line-height: 50px;}
+
+	.tp-leftarrow.tparrows.zeus{ margin-left: -20px; }
+	.tp-rightarrow.tparrows.zeus{ margin-right: -20px; }
+
+}
+@media only screen and (max-width: 479px) {
+	.main-slider{ margin-top: 140px; }
+}
+@media only screen and (max-width: 359px) {
+	.main-slider{ margin-top: 130px; }
+}
+
+
+/* ---------------------------------
+5. ABOUT US
+--------------------------------- */
+
+.about-section{ padding-bottom: 100px; }
+
+.about-section .heading{ margin-bottom: 40px; }
+
+.about-section .about-area{ width: 50%; }
+
+.about-section .about-img-wrapper{ padding: 0 50px; }
+
+
+.about-section .about-img{ margin: 15px 15px; position: relative; }
+
+.about-section .about-img:after{ content:''; position: absolute; top: -15px; left: -15px; height: 100%; width: 100%; z-index: -1; 
+	border: 1px solid #ffc300; }
+
+.about-section .about-img:before{ content:''; position: absolute; right: -15px; bottom: -15px; height: 100%; width: 100%; z-index: 1; 
+	border: 1px solid #ffc300; }
+
+
+/* COUNTER AREA STYLING */
+
+.about-section .counter-area{ margin-top: 40px; }
+
+.about-section .counter-area .desc{ margin-top: 5px; color: #666; }
+
+.about-section .counter-area .counter{ margin-bottom: 30px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+	
+	.about-section{ padding-bottom: 70px; }
+	
+	.about-section .about-area{ width: 100%; }
+	
+	.about-section .about-img-wrapper{ display: none; }
+	
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.about-section{ padding-bottom: 20px; text-align: center; }
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.about-section p{ text-align: justify; }
+
+}
+
+
+
+/* ---------------------------------
+6. SERVICES STYLING
+--------------------------------- */
+
+.services-section{ overflow: hidden; }
+
+.services-section .service{ padding: 70px; width: 25%; float: left; background: #ffc300; 
+	background: -webkit-linear-gradient(45deg, #fcbc0b, #ffc300);
+	background: linear-gradient(45deg, #fcbc0b, #ffd200); }
+
+.services-section .service:nth-child(2n+1){ background: #ffc300; 
+	background: -webkit-linear-gradient(45deg, #fcbc0b, #ffc300);
+	background: linear-gradient(45deg, #fcbc0b, #ffd200); }
+	
+.service .icon{ font-size: 3.5em; opacity: .9; color: #111; }
+ 
+.service .title{ margin: 20px 0; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1200px) {
+
+	.services-section .service{ padding: 50px; }
+}
+@media only screen and (max-width: 992px) {
+
+	.services-section .service{ width: 50%; }
+}
+@media only screen and (max-width: 767px) {
+
+	.services-section{ overflow: hidden; }
+	.services-section .service{ padding: 40px 30px; width: 100%; float: none; }
+	
+}
+@media only screen and (max-width: 479px) {
+
+	.services-section .service{ padding: 30px 15px; text-align: center; }
+	
+}
+
+
+/* ---------------------------------
+7. PROJECTS STYLING
+--------------------------------- */
+
+.project-section{ padding: 100px 0; text-align: center; }
+
+.project-section .filters{ margin-bottom: 70px; }
+
+.project-section .filters .btn{ background: none; padding: 10px 20px; margin: 0 5px 10px; }
+
+.project-section .filters .btn{ outline: 0; box-shadow: none;}
+
+.project-section .filters .btn:hover,
+.project-section .filters .btn.active{ background: #ffc300; }
+
+.project-section .project{ position: relative; }
+
+.project-section .project-info{ text-align: left; position: absolute; top: 15px; bottom: 15px; left: 15px; right: 15px; 
+	opacity: 0; background: rgba(255,255,255,.95); 
+	-webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
+
+.project-section .project-info .project-info-wrapper{ position: absolute; bottom: 0px; left: 0px; top: 0; right: 0; text-align: center; }
+
+.project-section .project-info .title{ margin: 5px 0 15px; }
+
+.project-section .project:hover .project-info{ opacity: 1; }
+
+
+
+/* MASONARY GRID STYLING */
+
+.grid{ margin: -10px; }
+
+.grid-item{ width: 33.333%; padding: 10px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.project-section{ padding: 50px 0; }
+	
+	.project-section .filters{ margin-bottom: 30px; }
+	
+	/* MASONARY GRID STYLING */
+	.grid-item{ width: 50%; }
+	
+}
+@media only screen and (max-width: 479px) {
+
+	.project-section{ padding: 50px 0;  }
+	.project-section .filters{ margin-bottom: 40px; }
+
+	/* MASONARY GRID STYLING */
+	.grid-item{ width: 100%; }
+	.project-section .project{ max-width: 300px; margin: 0 auto; }
+	
+}
+
+
+/* ---------------------------------
+8. VIDEO SECTION
+--------------------------------- */
+
+.video-section{ width: 100%; height: 500px; position: relative; z-index: 1; text-align: center; 
+	background-size: cover; background-image: url(../images/slider-4-1920x600.jpg); color: #fff; }
+
+.video-section:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
+	background: rgba(0,0,0,.5); }
+
+.video-section .video-writing{ max-width: 700px; margin: 0 auto; }
+
+.video-section .video-writing .title{ margin: 15px 0; }
+
+.video-section .video-writing .icon{ outline: 0; font-size: 50px; height: 70px; width: 70px; margin: 0 auto; line-height: 70px; 
+	border-radius: 70px; border: 2px solid #fff; 
+	-webkit-transition: all .2s; transition: all .2s; }
+
+.video-section .video-writing .icon i{ margin-right: -5px; }
+
+.video-section .video-writing .icon:focus,
+.video-section .video-writing .icon:hover{ border-color: #ffc300; color: #ffc300; -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 479px) {
+
+	.video-section{ height: 400px; }
+	
+}
+
+
+/* ---------------------------------
+9. TEAM SECTION
+--------------------------------- */
+
+.team-section .team{ position: relative; margin-bottom: 30px; box-shadow: 0px 3px 30px rgba(0,0,0,.11); }
+
+.team .social-icons{ position: absolute; top: 0px; right: 0px; background: #ffc300; }
+
+.team .social-icons > li{ display: block; }
+
+.team .social-icons > li > a{ width: 30px; height: 30px; line-height: 30px; text-align: center; font-size: .95em;
+	border-top: 1px solid rgba(0,0,0,.06); color: #555; }
+
+.team .social-icons > li > a i{ font-size: .9em; }
+
+.team .social-icons > li:first-child > a{ border-top: 0; }
+
+.team .social-icons > li > a:focus,
+.team .social-icons > li > a:hover{ background: #fff; color: #000; }
+
+.team-info{ padding: 20px 15px 25px; }
+
+.team-info .designation{ margin-top: 5px; color: #666; }
+
+
+/* SLIDER STYLING */
+
+.team-section .swiper-container{ padding: 0px 15px; }
+
+.team-section .swiper-button-next,
+.team-section .swiper-button-prev{ position: absolute; top: 50%; height: 40px; width: 40px; line-height: 36px; margin: -20px 0 0;
+	border-radius: 40px; opacity: 0; font-size: 1.5em; text-align: center; 
+	border: 2px solid #ffc300; background: #ffc300; color: #000; 
+	-webkit-transition: all .2s; transition: all .2s; }
+
+.team-section .swiper-button-next{ right: 15px; -webkit-transform: translateX(10px); transform: translateX(10px); }
+.team-section .swiper-button-prev{ left: 15px; -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+
+.team-swpr-wrapper:focus .swiper-button-next,
+.team-swpr-wrapper:focus .swiper-button-prev,
+.team-swpr-wrapper:hover .swiper-button-next,
+.team-swpr-wrapper:hover .swiper-button-prev{ opacity: 1; -webkit-transform: translateX(0px)!; transform: translateX(0px); }
+
+.team-swpr-wrapper .swiper-button-next:focus,
+.team-swpr-wrapper .swiper-button-prev:focus,
+.team-swpr-wrapper .swiper-button-next:hover,
+.team-swpr-wrapper .swiper-button-prev:hover{ background: #fff; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	/* SLIDER STYLING */
+	.team-swpr-wrapper .swiper-button-next,
+	.team-swpr-wrapper .swiper-button-prev{ opacity: 1; -webkit-transform: translateX(0px)!; transform: translateX(0px); }
+	
+}
+@media only screen and (max-width: 290px) {
+	
+	/* SLIDER STYLING */
+	.team-section .swiper-container{ padding: 0px 0px; }
+	
+}
+
+
+/* ---------------------------------
+10. FEATURED SECTION
+--------------------------------- */
+
+.featured-section{ position: relative; margin-top: 50px; background: #ffc300; }
+
+.featured-section .featured-img-wrapper{ position: absolute; top: -50px; left: 0; width: 50%; bottom: 0; z-index: 2;
+	padding-bottom: 50px; }
+
+.featured-section .featured-img-wrapper:after{ content:''; position: absolute; left: 0; right: 50px; bottom: 0; height: 50px; 
+	z-index: -1; background: #fff; }
+	
+.featured-section .featured-img{ height: 100%; width: 100%; 
+	background-size: cover; background-image: url(../images/featured-1-1200x800.jpg); }
+
+
+.featured-section .featured-area{ width: 50%; float: right; padding: 100px 0px 70px 50px; }
+
+.featured-area .feature{ position: relative; margin-bottom: 30px;  }
+
+.featured-area .feature .desc{ margin-top: 10px; }
+
+.feature .feature-icon{ position: absolute; top: 0; left: 0; width: 60px; font-size: 60px; opacity: .8; }
+
+.feature .feature-info{ padding-left: 90px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	.featured-section{ margin-top: 0px; }
+	.featured-section .featured-img-wrapper{ display: none; }
+	.featured-section .featured-area{ width: 100%; float: none; padding: 50px 0px 20px; }
+
+}
+@media only screen and (max-width: 479px) {
+
+	.featured-section{ margin-top: 0px; text-align: center; }
+	
+	.featured-section .featured-area{ float: none; padding: 50px 0 20px; }
+	
+	.feature .feature-icon{ position: static; width: 50px; font-size: 50px; margin: 0 auto 15px; }
+	
+	.feature .feature-info{ padding-left: 0px; }
+	
+}
+
+
+/* ---------------------------------
+11. PRODUCTS SECTION
+--------------------------------- */
+
+.products-section{ padding: 90px 0 40px; }
+
+.products-section .heading{ margin: 30px 0; padding: 0; text-align: left; }
+
+.products-section .heading:after{ display: none; }
+
+.products-section .heading .title .pre-heading{ margin: 10px 0; }
+
+.products-section .heading .heading-info{ margin: 20px 0; padding: 0; }
+
+
+.products-section .product{ text-align: center; padding: 30px 15px; margin: 10px 10px; 
+	-webkit-transition: all .2s cubic-bezier(.1,.54,.23,.99); transition: all .2s cubic-bezier(.1,.54,.23,.99); }
+
+.products-section .product:focus,
+.products-section .product:hover{ box-shadow: 1px 3px 20px rgba(0,0,0,.13); }
+
+.products-section .product .category{ margin-bottom: 5px; color: #666; }
+
+.products-section .product .product-img{ margin: 20px 20px; }
+
+.products-section .product .prev-price{ position: relative; font-size: .85em; margin-right: 6px; color: #666; }
+
+.products-section .product .prev-price:after{ content:''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; 
+	background: #666; }
+
+.products-section .product .cart-btn{ padding: 6px 20px 7px; margin-top: 10px; border-radius: 20px; border: 1px solid #ccc; }
+
+.products-section .product .cart-btn:focus,
+.products-section .product .cart-btn:hover{ border-color: #ffc300; background: #ffc300; color: #000; }
+
+
+/* SLIDER STYLING */
+
+.products-section .swiper-container{ padding: 0px; }
+
+.products-section .swpr-control{ overflow: hidden; }
+
+.products-section .swpr-control.smaller-device{ display: none; text-align: center; margin-top: 20px; }
+
+.products-section .swiper-button-prev, 
+.products-section .swiper-button-next{ margin: 0; padding: 0; background: none; position: static; width: 40px; height: 40px; 
+	line-height: 36px; text-align: center; display: inline-block; font-size: 1.5em; border-radius: 30px; margin-right: 5px;
+	border: 2px solid #ffc300; }
+
+.products-section .swiper-button-prev:hover, 
+.products-section .swiper-button-next:hover{ background: #ffc300; }
+
+
+.swiper-wrapper{ transition-timing-function: cubic-bezier(.1,.54,.23,.99); }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 992px) {
+	
+	.products-section{ padding: 90px 0; }
+	
+	.products-section .heading{ text-align: center; margin: 0 0 80px; }
+	
+	.products-section .swpr-control.bigger-device,
+	.products-section .heading .heading-info{ display: none; }
+	
+	.products-section .swpr-control.smaller-device{ display: block; }
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.products-section{ padding: 50px 0; }
+	
+	.products-section .heading{ margin: 0 0 30px; }
+	
+	.products-section .product{ border: 1px solid #ddd; }
+
+}
+
+
+
+/* ---------------------------------
+12. QUOTO STYLING
+--------------------------------- */
+
+.quoto-section{ margin: 55px 0 20px; padding: 0px 0 80px; }
+
+.quoto-section .quoto-wrapper{ padding: 50px 50px; padding-left: 220px; margin-left: 50px; position: relative; background: #ffc300; }
+
+.quoto-section .quoto-wrapper .icon{ position: absolute; font-size: 4em; top: -80px; left: 0px; color: rgba(0,0,0,.1); }
+
+.quoto-section .heading{ text-align: right; margin-bottom: 10px; } 
+ 
+.quoto-section .pre-heading{ margin-top: 5px; color: #555; }
+
+.quoto-section .quoto{ position: relative; padding-left: 0px; }  
+
+.quoto-section .quoto .quoto-desc{ margin: 15px 0 30px; }
+
+.quoto-section .quoto .profile-image{ width: 250px; position: absolute; left: -280px; top: -191px; }
+
+.quoto-section .quoto .designation{ margin-top: 5px; color: #444; }
+
+
+/* SLIDER STYLING */
+
+.quoto-section .swiper-container{ padding: 0px; position: relative; overflow: visible; }
+
+.quoto-section .swpr-control{ position: absolute; right: -30px; bottom: -80px; width: 86px; height: 43px; border: 3px solid #fff; }
+
+.quoto-section .swiper-button-prev,
+.quoto-section .swiper-button-next{ position: absolute; top: 0; width: 40px; height: 40px; line-height: 36px; 
+	margin: 0; text-align: center; border-radius: 2px; font-size: 30px; opacity: 1;
+	border: 1px solid #ffc300; background: #ffc300; color: #000; 
+	-webkit-transition: all .25s ease; transition: all .25s ease; }
+
+.quoto-section .swiper-button-prev:hover,
+.quoto-section .swiper-button-next:hover{ background: #fff; }
+	
+.quoto-section .swiper-button-prev{ left: 0px; }
+
+.quoto-section .swiper-button-next{ right: 0px; }
+
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+	
+	.quoto-section{ margin: 0px 0 20px; padding: 0px 0 50px; }
+	
+	.quoto-section .heading{ text-align: left; margin-bottom: 10px; } 
+	
+	.quoto-section .quoto-wrapper{ padding-left: 00px; margin-left: 0px; padding: 50px 30px; }
+	
+	.quoto-section .quoto-wrapper .icon{ top: -20px; left: 0px; }
+	
+	.quoto-section .quoto .profile-image{ max-width: 300px; width: 100%; margin-top: 15px; position: static; }
+	
+	.quoto-section .swpr-control{ bottom: -70px; right: 20px; }
+	
+}
+@media only screen and (max-width: 479px) {
+	
+	.quoto-section .quoto-wrapper{ padding: 50px 15px; }
+	
+	.quoto-section .swiper-container{ padding: 0; }
+	
+}
+
+
+
+/* ---------------------------------
+13. BLOG STYLING
+--------------------------------- */
+
+.blog-section{ padding: 0; }
+	
+.blog-section .blog-post{ box-shadow: 2px 6px 50px rgba(0,0,0,.1); }
+
+.blog-section .blog-post .blog-info{ padding: 30px 25px 5px; }
+
+.blog-section .blog-post .date{ margin-top: 10px; color: #666; }
+
+.blog-section .blog-post .date i{ margin-right: 10px; }
+
+.blog-section .blog-post .read-more-btn{ height: 40px; line-height: 38px; width: 40px; text-align: center; border-radius: 30px; 
+	float: right; margin-top: -20px; border: 1px solid #ccc; }
+
+.blog-section .blog-post .read-more-btn:focus,
+.blog-section .blog-post .read-more-btn:hover{ border-color: #ffc300; background: #ffc300; color: #000; }
+
+.blog-section .blog-post .name{ padding: 20px 0; margin-right: 50px; border-top: 1px solid #ddd; }
+
+
+
+/* ---------------------------------
+14. CLIENT SECTION STYLING
+--------------------------------- */
+
+.client-section{ padding: 30px 0 55px; text-align: center; }
+
+.client-section .swiper-slide{ opacity: .9;
+	-webkit-filter: grayscale(1); filter: grayscale(1); 
+	-webkit-transition: all .4s ease-out; transition: all .4s ease-out; }
+
+.client-section .swiper-slide:hover,
+.client-section .swiper-slide-active{ opacity: 1; -webkit-filter: grayscale(0); filter: grayscale(0); }
+
+	
+/* RESPONSIVE */
+
+@media only screen and (max-width: 479px) {
+
+	.client-section{ padding: 0px 0 30px; text-align: center;  }
+	
+}
+
+
+/* ---------------------------------
+15. FOOTER SECTION STYLING
+--------------------------------- */
+
+/* common/footer-styles.css */
+
+
+
